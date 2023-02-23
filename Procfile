@@ -1,1 +1,1 @@
-Vick: python3 main.py
+NISH: python3 main.py
