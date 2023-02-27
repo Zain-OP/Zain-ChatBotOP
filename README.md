@@ -26,9 +26,9 @@
 
 ### sᴜᴘᴘᴏʀᴛ 
 
-<p align="center"><a href="https://t.me/Y_K_D_1"> <img src="https://img.shields.io/badge/SUPPORT-black?style=for-the-badge" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://t.me/TeamAgora"> <img src="https://img.shields.io/badge/SUPPORT-purple?style=for-the-badge" width="220" height="38.45"/></a></p>
 
-<p align="center"><a href="https://t.me/XD_CUTETY"> <img src="https://img.shields.io/badge/Telegram%20Chsnnel-blue?style=for-the-badge" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://t.me/AboutAgora"> <img src="https://img.shields.io/badge/Telegram%20Chsnnel-yellow?style=for-the-badge" width="220" height="38.45"/></a></p>
 
 
 
