@@ -192,7 +192,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG1,
-                             caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n**мαdє ωιтн ❣️ ву [ᴀɴsʜ](https://t.me/teamagora)**",
+                             caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n**мαdє ωιтн ❣️ ву [ᴀɢᴏʀᴀ](https://t.me/teamagora)**",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
@@ -200,8 +200,8 @@ async def ping(client, message: Message):
     filters.command(["chatbot off", f"chatbot@{BOT_USERNAME} off"], prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatbotofd(client, message):
-    vickdb = MongoClient(MONGO_URL)    
-    vick = vickdb["VickDb"]["Vick"]     
+    agoradb = MongoClient(MONGO_URL)    
+    agora = agoradb["AgoraDb"]["Agora"]     
     if message.from_user:
         user = message.from_user.id
         chat_id = message.chat.id
@@ -211,11 +211,11 @@ async def chatbotofd(client, message):
            return await message.reply_text(
                 "You are not admin"
             )
-    is_vick = vick.find_one({"chat_id": message.chat.id})
-    if not is_vick:
-        vick.insert_one({"chat_id": message.chat.id})
+    is_agora = agora.find_one({"chat_id": message.chat.id})
+    if not is_agora:
+        agora.insert_one({"chat_id": message.chat.id})
         await message.reply_text(f"Chatbot Disabled!")
-    if is_vick:
+    if is_agora:
         await message.reply_text(f"ChatBot Already Disabled")
     
 
@@ -223,8 +223,8 @@ async def chatbotofd(client, message):
     filters.command(["chatbot on", f"chatbot@{BOT_USERNAME} on"] ,prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatboton(client, message):
-    vickdb = MongoClient(MONGO_URL)    
-    vick = vickdb["VickDb"]["Vick"]     
+    agoradb = MongoClient(MONGO_URL)    
+    agora = agoradb["AgoraDb"]["Agora"]     
     if message.from_user:
         user = message.from_user.id
         chat_id = message.chat.id
@@ -234,11 +234,11 @@ async def chatboton(client, message):
             return await message.reply_text(
                 "You are not admin"
             )
-    is_vick = vick.find_one({"chat_id": message.chat.id})
-    if not is_vick:           
+    is_agora = agora.find_one({"chat_id": message.chat.id})
+    if not is_agora:           
         await message.reply_text(f"Chatbot Already Enabled")
-    if is_vick:
-        vick.delete_one({"chat_id": message.chat.id})
+    if is_agora:
+        agora.delete_one({"chat_id": message.chat.id})
         await message.reply_text(f"ChatBot Enabled!")
     
 
@@ -257,16 +257,16 @@ async def chatbot(client, message):
     & ~filters.private
     & ~filters.bot,
 )
-async def vickai(client: Client, message: Message):
+async def agoraai(client: Client, message: Message):
 
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"]   
 
    if not message.reply_to_message:
-       vickdb = MongoClient(MONGO_URL)
-       vick = vickdb["VickDb"]["Vick"] 
-       is_vick = vick.find_one({"chat_id": message.chat.id})
-       if not is_vick:
+       agoradb = MongoClient(MONGO_URL)
+       agora = agoradb["AgoraDb"]["Agora"] 
+       is_agora = agora.find_one({"chat_id": message.chat.id})
+       if not is_agora:
            await bot.send_chat_action(message.chat.id, "typing")
            K = []  
            is_chat = chatai.find({"word": message.text})  
@@ -283,13 +283,13 @@ async def vickai(client: Client, message: Message):
                    await message.reply_text(f"{hey}")
    
    if message.reply_to_message:  
-       vickdb = MongoClient(MONGO_URL)
-       vick = vickdb["VickDb"]["Vick"] 
-       is_vick = vick.find_one({"chat_id": message.chat.id})    
+       agoradb = MongoClient(MONGO_URL)
+       agora = agoradb["AgoraDb"]["Agora"] 
+       is_agora = agora.find_one({"chat_id": message.chat.id})    
        getme = await bot.get_me()
        bot_id = getme.id                             
        if message.reply_to_message.from_user.id == bot_id: 
-           if not is_vick:                   
+           if not is_agora:                   
                await bot.send_chat_action(message.chat.id, "typing")
                K = []  
                is_chat = chatai.find({"word": message.text})
@@ -323,16 +323,16 @@ async def vickai(client: Client, message: Message):
     & ~filters.private
     & ~filters.bot,
 )
-async def vickstickerai(client: Client, message: Message):
+async def agorastickerai(client: Client, message: Message):
 
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"]   
 
    if not message.reply_to_message:
-       vickdb = MongoClient(MONGO_URL)
-       vick = vickdb["VickDb"]["Vick"] 
-       is_vick = vick.find_one({"chat_id": message.chat.id})
-       if not is_vick:
+       agoradb = MongoClient(MONGO_URL)
+       agora = agoradb["AgoraDb"]["Agora"] 
+       is_agora = agora.find_one({"chat_id": message.chat.id})
+       if not is_agora:
            await bot.send_chat_action(message.chat.id, "typing")
            K = []  
            is_chat = chatai.find({"word": message.sticker.file_unique_id})      
@@ -349,13 +349,13 @@ async def vickstickerai(client: Client, message: Message):
                    await message.reply_sticker(f"{hey}")
    
    if message.reply_to_message:
-       vickdb = MongoClient(MONGO_URL)
-       vick = vickdb["VickDb"]["Vick"] 
-       is_vick = vick.find_one({"chat_id": message.chat.id})
+       agoradb = MongoClient(MONGO_URL)
+       agora = agoradb["AgoraDb"]["Agora"] 
+       is_agora = agora.find_one({"chat_id": message.chat.id})
        getme = await bot.get_me()
        bot_id = getme.id
        if message.reply_to_message.from_user.id == bot_id: 
-           if not is_vick:                    
+           if not is_agora:                    
                await bot.send_chat_action(message.chat.id, "typing")
                K = []  
                is_chat = chatai.find({"word": message.text})
