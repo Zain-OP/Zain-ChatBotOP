@@ -1,5 +1,5 @@
 <h4>ᴀʙᴏᴜᴛ ᴍᴇ!</h4>
-<pre><b>ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀᴛʙᴏᴛ </b></pre>
+<pre><b> ғᴏᴜɴᴅᴇʀ ᴏғ ᴋᴀʀɴᴀᴛᴀᴋᴀ ᴛᴇʟᴇɢʀᴀᴍ </b></pre>
 
 <details>
 <summary><h3>ɴᴏᴛᴇ📝</h3></summary> 
@@ -10,7 +10,7 @@
 <details>
 <summary><h4> ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴜᴋᴏ🚀</h4></summary>
 <pre><i>ᴇɴᴛᴇʀ ᴛʜᴇ ʀᴇǫᴜɪʀᴇᴅ ᴠᴀʀs ɪɴ ᴛʜᴇ ʜᴇʀᴜᴋᴏ.</i></pre>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/CuteBaccha/Nish_chatbot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/KARNATAKAHACKER/AGORA-CHATBOT"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-pink?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 </details>
 
 
