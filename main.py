@@ -18,29 +18,29 @@ UPDATE_CHNL = os.environ.get("UPDATE_CHNL")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME")
 SUPPORT_GRP = os.environ.get("SUPPORT_GRP")
 BOT_NAME = os.environ.get("BOT_NAME")
-START_IMG1 = os.environ.get("START_IMG1")
-START_IMG2 = os.environ.get("START_IMG2", None)
-START_IMG3 = os.environ.get("START_IMG3", None)
-START_IMG4 = os.environ.get("START_IMG4", None)
-START_IMG5 = os.environ.get("START_IMG5", None)
-START_IMG6 = os.environ.get("START_IMG6", None)
-START_IMG7 = os.environ.get("START_IMG7", None)
-START_IMG8 = os.environ.get("START_IMG8", None)
-START_IMG9 = os.environ.get("START_IMG9", None)
-START_IMG10 = os.environ.get("START_IMG10", None)
+START_IMG1 = os.environ.get("START_IMG")
+START_IMG2 = os.environ.get("START_IMG", None)
+START_IMG3 = os.environ.get("START_IMG", None)
+START_IMG4 = os.environ.get("START_IMG", None)
+START_IMG5 = os.environ.get("START_IMG", None)
+START_IMG6 = os.environ.get("START_IMG", None)
+START_IMG7 = os.environ.get("START_IMG", None)
+START_IMG8 = os.environ.get("START_IMG", None)
+START_IMG9 = os.environ.get("START_IMG", None)
+START_IMG10 = os.environ.get("START_IMG", None)
 STKR = os.environ.get("STKR")
-STKR1 = os.environ.get("STKR1", None)
-STKR2 = os.environ.get("STKR2", None)
-STKR3 = os.environ.get("STKR3", None)
-STKR4 = os.environ.get("STKR4", None)
-STKR5 = os.environ.get("STKR5", None)
-STKR6 = os.environ.get("STKR6", None)
-STKR7 = os.environ.get("STKR7", None)
-STKR8 = os.environ.get("STKR8", None)
-STKR9 = os.environ.get("STKR9", None)
+STKR1 = os.environ.get("STKR", None)
+STKR2 = os.environ.get("STKR", None)
+STKR3 = os.environ.get("STKR", None)
+STKR4 = os.environ.get("STKR", None)
+STKR5 = os.environ.get("STKR", None)
+STKR6 = os.environ.get("STKR", None)
+STKR7 = os.environ.get("STKR", None)
+STKR8 = os.environ.get("STKR", None)
+STKR9 = os.environ.get("STKR", None)
 
 bot = Client(
-    "TeamAgora_bot" ,
+    "ZAIN_bot" ,
     api_id = API_ID,
     api_hash = API_HASH ,
     bot_token = BOT_TOKEN
@@ -103,8 +103,8 @@ START = f"""
 """
 DEV_OP = [
     [
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", url=f"https://t.me/aboutagora"),
-        InlineKeyboardButton(text="✨ ꜱᴜᴘᴘᴏʀᴛ ✨", url=f"https://t.me/teamagora"),
+        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", url=f"https://t.me/Officialzain_05"),
+        InlineKeyboardButton(text="✨ ꜱᴜᴘᴘᴏʀᴛ ✨", url=f"tg://settings"),
     ],
     [
         InlineKeyboardButton(
@@ -116,8 +116,8 @@ DEV_OP = [
         InlineKeyboardButton(text="🚀 ʜᴇʟᴘ & ᴄᴍᴅs 🚀", callback_data="HELP"),
     ],
     [
-        InlineKeyboardButton(text="❄️ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ❄️", url=f"https://t.me/teamagora"),
-        InlineKeyboardButton(text="☁️ ᴜᴘᴅᴀᴛᴇs ☁️", url=f"https://t.me/{UPDATE_CHNL}"),
+        InlineKeyboardButton(text="❄️ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ❄️", url=f"tg://settings"),
+        InlineKeyboardButton(text="☁️ ᴜᴘᴅᴀᴛᴇs ☁️", url=f"tg://settings"),
     ],
 ]
 PNG_BTN = [
@@ -129,11 +129,11 @@ PNG_BTN = [
      ],
      [
          InlineKeyboardButton(text="✨ sᴜᴘᴘᴏʀᴛ ✨", 
-                              url=f"https://t.me/{SUPPORT_GRP}",
+                              url=f"tg://settings",
          ),
      ],
 ]
-HELP_READ = "**ᴜsᴀɢᴇ ☟︎︎︎**\n**➻ ᴜsᴇ** `/chatbot on` **ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**➻ ᴜsᴇ** `/chatbot off` **ᴛᴏ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**๏ ɴᴏᴛᴇ ➻ ʙᴏᴛʜ ᴛʜᴇ ᴀʙᴏᴠᴇ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴄʜᴀᴛ-ʙᴏᴛ ᴏɴ/ᴏғғ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ!!**\n\n**➻ ᴜsᴇ** `/ping` **ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n**© @Mr_Agora**"
+HELP_READ = "**ᴜsᴀɢᴇ ☟︎︎︎**\n**➻ ᴜsᴇ** `/chatbot on` **ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**➻ ᴜsᴇ** `/chatbot off` **ᴛᴏ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**๏ ɴᴏᴛᴇ ➻ ʙᴏᴛʜ ᴛʜᴇ ᴀʙᴏᴠᴇ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴄʜᴀᴛ-ʙᴏᴛ ᴏɴ/ᴏғғ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ!!**\n\n**➻ ᴜsᴇ** `/ping` **ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n**© @Officialzain_05**"
 HELP_BACK = [
      [
            InlineKeyboardButton(text="✨ ʙᴀᴄᴋ ✨", callback_data="HELP_BACK"),
@@ -192,7 +192,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG1,
-                             caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n**мαdє ωιтн ❣️ ву [ᴀɢᴏʀᴀ](https://t.me/teamagora)**",
+                             caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n**мαdє ωιтн ❣️ ву [ᴀɢᴏʀᴀ](https://t.me/Officialzain_05)**",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
