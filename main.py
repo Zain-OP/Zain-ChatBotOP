@@ -267,7 +267,7 @@ async def agoraai(client: Client, message: Message):
        agora = agoradb["AgoraDb"]["Agora"] 
        is_agora = agora.find_one({"chat_id": message.chat.id})
        if not is_agora:
-           await bot.send_chat_action(message.chat.id, "typing")
+           # await bot.send_chat_action(message.chat.id, "typing")
            K = []  
            is_chat = chatai.find({"word": message.text})  
            k = chatai.find_one({"word": message.text})      
@@ -290,7 +290,7 @@ async def agoraai(client: Client, message: Message):
        bot_id = getme.id                             
        if message.reply_to_message.from_user.id == bot_id: 
            if not is_agora:                   
-               await bot.send_chat_action(message.chat.id, "typing")
+               # await bot.send_chat_action(message.chat.id, "typing")
                K = []  
                is_chat = chatai.find({"word": message.text})
                k = chatai.find_one({"word": message.text})      
@@ -333,7 +333,7 @@ async def agorastickerai(client: Client, message: Message):
        agora = agoradb["AgoraDb"]["Agora"] 
        is_agora = agora.find_one({"chat_id": message.chat.id})
        if not is_agora:
-           await bot.send_chat_action(message.chat.id, "typing")
+           # await bot.send_chat_action(message.chat.id, "typing")
            K = []  
            is_chat = chatai.find({"word": message.sticker.file_unique_id})      
            k = chatai.find_one({"word": message.text})      
@@ -356,7 +356,7 @@ async def agorastickerai(client: Client, message: Message):
        bot_id = getme.id
        if message.reply_to_message.from_user.id == bot_id: 
            if not is_agora:                    
-               await bot.send_chat_action(message.chat.id, "typing")
+               # await bot.send_chat_action(message.chat.id, "typing")
                K = []  
                is_chat = chatai.find({"word": message.text})
                k = chatai.find_one({"word": message.text})      
@@ -395,7 +395,7 @@ async def vickprivate(client: Client, message: Message):
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"]
    if not message.reply_to_message: 
-       await bot.send_chat_action(message.chat.id, "typing")
+       # await bot.send_chat_action(message.chat.id, "typing")
        K = []  
        is_chat = chatai.find({"word": message.text})                 
        for x in is_chat:
@@ -411,7 +411,7 @@ async def vickprivate(client: Client, message: Message):
        getme = await bot.get_me()
        bot_id = getme.id       
        if message.reply_to_message.from_user.id == bot_id:                    
-           await bot.send_chat_action(message.chat.id, "typing")
+           # await bot.send_chat_action(message.chat.id, "typing")
            K = []  
            is_chat = chatai.find({"word": message.text})                 
            for x in is_chat:
@@ -438,7 +438,7 @@ async def vickprivatesticker(client: Client, message: Message):
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"] 
    if not message.reply_to_message:
-       await bot.send_chat_action(message.chat.id, "typing")
+       # await bot.send_chat_action(message.chat.id, "typing")
        K = []  
        is_chat = chatai.find({"word": message.sticker.file_unique_id})                 
        for x in is_chat:
@@ -454,7 +454,7 @@ async def vickprivatesticker(client: Client, message: Message):
        getme = await bot.get_me()
        bot_id = getme.id       
        if message.reply_to_message.from_user.id == bot_id:                    
-           await bot.send_chat_action(message.chat.id, "typing")
+           # await bot.send_chat_action(message.chat.id, "typing")
            K = []  
            is_chat = chatai.find({"word": message.sticker.file_unique_id})                 
            for x in is_chat:
